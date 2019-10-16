@@ -9,6 +9,7 @@ El diseño te lo dejamos para vos :)
 ### Algunos pedidos y tips
 
 * Resolvelo en php y que el backend funcione como una api rest
+* La resolución debe ser un fork de este repo
 * No uses frameworks para php, perdoná :)
 * El resultado nos gustaría verlo en html, css y js haciendo llamadas asincronas al backend. Podes usar el framework de js (menos Jquery, que no es un framework) que quieras :)
 * No uses el nombre del Grand Slam como indentificador. Si le prestas atención al excel hay otra forma :).
