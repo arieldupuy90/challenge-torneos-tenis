@@ -1,0 +1,36 @@
+
+<html>
+    
+  <body>
+    <div class="todo" *ngIf="tabla && !this.torneos">
+      <ngx-spinner
+        bdColor="rgba(51,51,51,0.8)"
+        size="large"
+        color="#fff"
+        type="ball-scale-multiple"><p style="font-size: 20px; color: white">Cargado...</p></ngx-spinner> 
+    </div>
+    <div>
+      <h2>{{this.title}}</h2>
+      <table *ngIf="tabla && this.torneos">
+        <tr><th> Torneo</th><th   >Mayor ganador</th></tr>
+        <tr *ngFor="let item of this.torneos">
+        <td   class="pri"><div>{{item.torneo}}</div></td>
+        <td   class="sec"><div (click)="ultimaVez(item)" ><div class="link">{{item.ganador}}</div></div></td>
+        </tr>
+        </table>
+    </div>
+    <div *ngIf="datos"> 
+          <div class="card">
+              <h4><b>{{jugador}}</b></h4>
+            <div class="container">
+              <p>Torneo: <span><b>{{grandSlam}}</b></span></p>
+              <p>Ultima vez ganado:
+                <span *ngIf="ultimoGanado" class="span"><b>{{ultimoGanado}}</b></span>
+                <span *ngIf="!ultimoGanado" class="span">Obteniendo...</span>
+              </p>
+              <div class="row"><button  class="md-button" (click)="volver()">Volver</button></div>
+            </div>
+          </div> 
+    </div>
+  </body>
+</html>
