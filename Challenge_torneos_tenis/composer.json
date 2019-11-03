@@ -1,0 +1,13 @@
+{
+    "name": "vendor/challenge-torneos-tenis",
+    "description": "Description of project Challenge_torneos_tenis.",
+    "authors": [
+        {
+            "name": "caroa",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {
+        "google/apiclient": "dev-master"
+    }
+}

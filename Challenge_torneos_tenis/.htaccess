@@ -1,0 +1,4 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteRule ^get(.*)$ index.php?url=$1 [QSA,L]
